@@ -21,7 +21,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap" rel="stylesheet">
-    <script src="index.js"></script>
+    
 
 </head>
 
@@ -297,11 +297,23 @@
         Your browser does not support the audio element.
     </audio>
 
-    <button class="music" onclick="playAudio()" type="button" style=" animation: slide-both-side 10s linear infinite; animation-delay: 0.1s; 
+    <button class="music" onclick="playAudio()" type="button" style=" animation: fun 10s linear infinite; animation-delay: 0.1s; 
         transform: translateY(200px);"></button>
 
 
+    <script>
+        var bgmusic = document.getElementById("myAudio");
 
+        function playAudio() {
+            if (bgmusic.paused) {
+                bgmusic.play();
+            }
+            else {
+                bgmusic.pause();
+
+            }
+        }
+    </script>
    
 </body>
 
