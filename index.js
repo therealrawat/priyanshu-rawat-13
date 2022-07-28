@@ -1,7 +1,3 @@
-var preloader = document.getElementById('loading');
-        function letgo() {
-            preloader.style.display = 'none';
-        }
 
 var bgmusic = document.getElementById("myAudio");
 
