@@ -5,19 +5,6 @@
 }
 
 
-/* Color Set */
-.bg-navyBlue {
-    background: #0e0e17;
-}
-
-.bg-deepDark {
-    background: #000;
-}
-
-.bg-deepNavyBlue {
-    background: #0b0b13;
-}
-
 .bg-warning, .btn-warning , .btn-outline-warning, .border-raduis {
     background: #224a54 !important;
 }
@@ -26,10 +13,6 @@
 {
     opacity: 0.5;
 }
-
-
-
-
 
 .img-in
 {
