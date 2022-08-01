@@ -105,7 +105,7 @@
 
 
             <!-- skills -->
-
+<!--
             <div class="section grid-items grid-items-feature-first" style="margin: 2rem auto;">
                 <h2 class="section-header" style="text-shadow: 0 0 4px #000">Skills.</h2>
                 <a class="grid-item grid-item-dark-text grid-item-tall case-item-main"
@@ -113,8 +113,7 @@
                     <div class="article article-preview">
                         <div class="skill-img">
                             <div class="skill-img-content">
-                                <!-- <ul>
-                                    <li> -->
+                                
 
                                 <img style="width: 100px; opacity: 0.7; animation: fun 5s linear infinite; "
                                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
@@ -141,8 +140,7 @@
                                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
 
 
-                                <!-- </li>
-                                </ul> -->
+                                
                             </div>
                         </div>
 
@@ -150,7 +148,28 @@
                     </div>
                 </a>
             </div>
-
+-->
+            <div class="section grid-items grid-items-feature-first">
+                <h2 class="section-header" style="color: #fff;">Skills.</h2>
+                <a class="grid-item " style="background: linear-gradient(45deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/keyboard2.jpg); background-size: cover; font-family: monospace;">
+                    <div class="skill-type" style="margin: 0 auto;">
+                        <p class="typing" ></p>
+                        <span>I have worked with:</span>
+                    </div>
+                    
+                    <br>
+                    <div class="skillsLists">
+                    <p style="opacity: 0.64;">React</p>
+                    <p style="opacity: .8;">Bootstrap</p>
+                    <p style="opacity: 1;">JavaScript</p>
+                    <p style="opacity: .8;">HTML/CSS</p>
+                    <p style="opacity: 0.64;">Python</p>
+                    <p style="opacity: 0.48;">MySql</p>
+                    <p style="opacity: 0.32;">Java</p>
+                    </div>
+                </a>
+            </div>
+            
 
             <!-- eeducation -->
 
@@ -321,6 +340,31 @@
         function letgo() {
             preloader.style.display = 'none';
         }
+        
+        
+        const texts = ["Programming Languages ","Libraries & Frameworks "];
+        let count = 0;
+        let index = 0;
+        let currentText = "";
+        let letter = "";
+
+        (function type() {
+
+            if(count === texts.length){
+                count = 0;
+            }
+            currentText = texts[count];
+            letter = currentText.slice(0, ++index);
+
+            document.querySelector('.typing').textContent = letter;
+            if(letter.length === currentText.length)
+            {
+                count++;
+                index = 0;
+            }
+            setTimeout(type, 200);
+        }());
+
         
         var bgmusic = document.getElementById("myAudio");
 
